@@ -69,3 +69,21 @@ let threeSum = function(nums) {
 console.log(threeSum([-1,0,1,2,-1,-4]))
 console.log(threeSum([0,0,0]))
 console.log(threeSum([0,0,0,0]))
+
+/*
+
+The nums array can contain duplicates, and we want to avoid using the same value for 'a' when the recipe for threeSum is:
+'a' + 'b' + 'c' = 0.
+Let's say we have the following array: [-3, 3, 4, -3, 2, 1], we have the value '-3' repeat itself.
+If we don't sort the array, we get the following result: [[-3,2,1], [-3,2,1]] which contains the same triplets
+because if we use Two Pointers method, we get the first value from indices 0,4,5 and then from 3,4,5 which we want to avoid.
+We want to eliminate the duplicates. The solution to eliminate the duplicates is to sort the input array.
+
+After sort we get [-3,-3,1,2,3,4] and what we want to do is to use Two Pointers method, but eliminate the possibility of getting duplicates
+since we can get the result [[-3,2,1], [-3,2,1]] again from indices 0,2,3 and 1,2,3.
+So what we want to do is to check if we saw the same value which in this example is -3, we want to skip it (threeSumSkipDuplicate.png).
+And if 'a' has already a positive value there's no point in continuing since nothing will sum to 0 anymore.
+
+We don't want to reuse the same values for 'j' and 'k' either.
+
+ */
