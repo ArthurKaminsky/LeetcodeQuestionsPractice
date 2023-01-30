@@ -1,4 +1,4 @@
-package src.mediumQuestions.Java;
+package mediumQuestions;
 
 class ListNode {
     int val;
@@ -8,7 +8,7 @@ class ListNode {
     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
 }
 
-class Solution {
+class AddTwoNumbersSolution {
 
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
         ListNode dummyHead = new ListNode(0);
@@ -30,7 +30,7 @@ class Solution {
     }
 
     public static void main(String[] args) {
-        Solution solution = new Solution();
+        AddTwoNumbersSolution solution = new AddTwoNumbersSolution();
         ListNode l1 = new ListNode(3);
         ListNode l2 = new ListNode(4);
         l1.next = new ListNode(4);
