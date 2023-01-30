@@ -1,6 +1,6 @@
 from typing import List
 
-class Solution:
+class src.mediumQuestions.Java.Solution:
     def threeSum(self, nums: List[int]) -> List[List[int]]:
         res = []
         nums.sort()
@@ -22,8 +22,8 @@ class Solution:
                         l += 1
         return res
 
-print(Solution().threeSum([-2,-2,0,0,2,2]))
-print(Solution().threeSum([-3,3,4,-3,1,2]))
+print(src.mediumQuestions.Java.Solution().threeSum([-2,-2,0,0,2,2]))
+print(src.mediumQuestions.Java.Solution().threeSum([-3,3,4,-3,1,2]))
 
 class Solution2:
     def threeSum(self, nums: List[int]) -> List[List[int]]:
