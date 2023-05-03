@@ -1,6 +1,7 @@
 from typing import List
 
-class src.mediumQuestions.Java.Solution:
+
+class Solution:
     def threeSum(self, nums: List[int]) -> List[List[int]]:
         res = []
         nums.sort()
@@ -22,8 +23,10 @@ class src.mediumQuestions.Java.Solution:
                         l += 1
         return res
 
-print(src.mediumQuestions.Java.Solution().threeSum([-2,-2,0,0,2,2]))
-print(src.mediumQuestions.Java.Solution().threeSum([-3,3,4,-3,1,2]))
+
+print(Solution().threeSum([-2, -2, 0, 0, 2, 2]))
+print(Solution().threeSum([-3, 3, 4, -3, 1, 2]))
+
 
 class Solution2:
     def threeSum(self, nums: List[int]) -> List[List[int]]:
@@ -47,7 +50,6 @@ class Solution2:
         res.update(self.get_triples(p, n_set))
         return res
 
-
     @staticmethod
     def get_triples(l, s):
         r = []
@@ -58,5 +60,6 @@ class Solution2:
             except IndexError:
                 return r
 
-print(Solution2().threeSum([-2,-2,0,0,2,2]))
-print(Solution2().threeSum([-3,3,4,-3,1,2]))
+
+print(Solution2().threeSum([-2, -2, 0, 0, 2, 2]))
+print(Solution2().threeSum([-3, 3, 4, -3, 1, 2]))

@@ -1,3 +1,7 @@
+#-----------------------------------------------------------#
+# JetBrains & VsCode Ignore
+#-----------------------------------------------------------#
+
 ### VisualStudioCode template
 .vscode/*
 !.vscode/settings.json
